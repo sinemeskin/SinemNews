@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="double_pad">16dp</dimen>
+    <dimen name="pad">8dp</dimen>
+    <dimen name="list_height">180dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+
+</resources>

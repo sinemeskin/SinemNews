@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_height"
+    android:orientation="horizontal"
+    android:padding="@dimen/double_pad">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="@dimen/pad">
+
+        <TextView
+
+            android:id="@+id/section"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            tools:text="@string/temp_name" />
+
+        <TextView
+
+            android:id="@+id/title"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="@string/temp_name" />
+
+        <TextView
+
+            android:id="@+id/author"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            tools:text="@string/temp_name" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/TextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        tools:text="@string/temp_name" />
+
+
+</LinearLayout>
