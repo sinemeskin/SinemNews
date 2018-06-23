@@ -5,4 +5,10 @@
     <string name="no_internet">No internet connection.</string>
     <string name="settings_menu_item">Settings</string>
     <string name="settings_title">News Settings</string>
+    <string name="settings_earliest_date_label">Earliest Year</string>
+    <string name="settings_earliest_date_key" translatable="false">early_date</string>
+    <string name="settings_earliest_date_default" translatable="false">2018</string>
+    <string name="settings_keyword_label">Write a keyword</string>
+    <string name="settings_keyword_key" translatable="false">keyword</string>
+    <string name="settings_keyword_default" translatable="false">music</string>
 </resources>
