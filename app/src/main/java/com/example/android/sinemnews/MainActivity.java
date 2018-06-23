@@ -81,6 +81,10 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
                 getString(R.string.settings_keyword_key),
                 getString(R.string.settings_keyword_default));
 
+        String orderBy = sharedPrefs.getString(
+                getString(R.string.settings_order_by_key),
+                getString(R.string.settings_order_by_default)
+        );
 
         // parse breaks apart the URI string that's passed into its parameter
         Uri baseUri = Uri.parse(NEWS_REQUEST_URL);
@@ -90,9 +94,10 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
 
 
         uriBuilder.appendQueryParameter("q", keyword);
-        uriBuilder.appendQueryParameter("order-by", "newest");
-        uriBuilder.appendQueryParameter("from-date", "2018-01-01");
-        uriBuilder.appendQueryParameter("api-key", "41758869-ae3a-4556-b9c4-1d3111c2ff8e");
+        uriBuilder.appendQueryParameter("order-by", orderBy);
+        uriBuilder.appendQueryParameter("from-date", String.valueOf("2018-01-01"));
+        uriBuilder.appendQueryParameter("api-key", String.valueOf("41758869-ae3a-4556-b9c4-1d3111c2ff8e"));
+
 
         return new NewsLoader(this, uriBuilder.toString());
 
